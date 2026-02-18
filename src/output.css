@@ -164,6 +164,9 @@
   }
 }
 @layer utilities {
+  .clear-both {
+    clear: both;
+  }
   .m-auto {
     margin: auto;
   }
@@ -191,6 +194,9 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[67\] {
+    width: 67;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -200,11 +206,17 @@
   .w-\[280px\] {
     width: 280px;
   }
+  .w-\[499px\] {
+    width: 499px;
+  }
   .w-\[565pc\] {
     width: 565pc;
   }
   .w-\[565px\] {
     width: 565px;
+  }
+  .w-\[676px\] {
+    width: 676px;
   }
   .w-\[721px\] {
     width: 721px;
@@ -300,6 +312,9 @@
   .p-42 {
     padding: calc(var(--spacing) * 42);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -345,6 +360,12 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
@@ -363,6 +384,9 @@
   .text-\[70px\]\/20 {
     font-size: 70px;
     line-height: calc(var(--spacing) * 20);
+  }
+  .text-\[18pc\] {
+    font-size: 18pc;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -392,6 +416,10 @@
   .font-\[600\] {
     --tw-font-weight: 600;
     font-weight: 600;
+  }
+  .font-\[800\] {
+    --tw-font-weight: 800;
+    font-weight: 800;
   }
   .text-\[\#151515\] {
     color: #151515;
@@ -429,6 +457,11 @@
       width: 6h-80px;
     }
   }
+  .lg\:w-\[499px\] {
+    @media (width >= 64rem) {
+      width: 499px;
+    }
+  }
   .lg\:w-\[565px\] {
     @media (width >= 64rem) {
       width: 565px;
@@ -437,6 +470,11 @@
   .lg\:w-\[650px\] {
     @media (width >= 64rem) {
       width: 650px;
+    }
+  }
+  .lg\:w-\[676px\] {
+    @media (width >= 64rem) {
+      width: 676px;
     }
   }
   .lg\:w-\[680px\] {
@@ -509,6 +547,11 @@
       line-height: calc(var(--spacing) * 20);
     }
   }
+  .lg\:text-\[28px\] {
+    @media (width >= 64rem) {
+      font-size: 28px;
+    }
+  }
   .lg\:font-\[400\] {
     @media (width >= 64rem) {
       --tw-font-weight: 400;
@@ -519,6 +562,11 @@
     @media (width >= 64rem) {
       --tw-font-weight: var(--font-weight-black);
       font-weight: var(--font-weight-black);
+    }
+  }
+  .lg\:text-\[2\] {
+    @media (width >= 64rem) {
+      color: 2;
     }
   }
 }
